@@ -32,46 +32,25 @@ CREATE DATABASE `m307praxis`;
 USE `m307praxis`;
 
 CREATE TABLE `auftrag` (
-  `orderID` int(11) NOT NULL,
+  `orderID` int(11) NOT NULL AUTO_INCREMENT,
   `firstname` varchar(50) NOT NULL,
   `lastname` varchar(50) NOT NULL,
   `email` varchar(100) NOT NULL,
   `phone` varchar(20) NOT NULL,
   `service` varchar(40) NOT NULL,
   `priority` varchar(16) NOT NULL,
-  `date` varchar(40) NOT NULL
+  `date` varchar(40) NOT NULL,
+  ADD PRIMARY KEY(`orderID`)
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
---
--- Dumping data for table `auftrag`
---
 
+
+-- Value example
 INSERT INTO `auftrag` (`orderID`, `firstname`, `lastname`, `email`, `phone`, `service`, `priority`, `date`) VALUES
 (1, 'Dylan', 'Muchenberger', 'dylan.muchenberger@gmail.com', '0763604416', 'Grosser Service', 'standard', ''),
-(2, 'Franz', 'KÃ¼hne', 'franz.k@skiwelt.ch', '0614848122', 'Rennski-Service', 'high', ''),
-(3, 'Dylan', 'Muchenberger', 'dylan.muchenberger@gmail.com', '1242344', 'Grosser Service', 'standard', ''),
 
 
---
--- Indexes for dumped tables
---
 
---
--- Indexes for table `auftrag`
---
-ALTER TABLE `auftrag`
-  ADD PRIMARY KEY (`orderID`);
-
---
--- AUTO_INCREMENT for dumped tables
---
-
---
--- AUTO_INCREMENT for table `auftrag`
---
-ALTER TABLE `auftrag`
-  MODIFY `orderID` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=27;
-COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
 /*!40101 SET CHARACTER_SET_RESULTS=@OLD_CHARACTER_SET_RESULTS */;
