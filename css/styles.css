@@ -1,0 +1,41 @@
+/* Styles general text and objects on the website*/
+h1 {
+    color: #007bff; 
+    font-family: 'Raleway',sans-serif; 
+    font-size: 50px; 
+    font-weight: 800;
+    max-width: 100%;
+    text-align:center;
+   }
+
+.container-fluid h1 { /*Styles headin 1 inside of the bootstap container */
+    color: #007bff; 
+    font-family: 'Raleway',sans-serif; 
+    font-size: 50px; 
+    font-weight: 800;
+    max-width: 100%;
+    text-align:center;
+   }
+
+#map { /* CSS styling for google map used on contact page*/
+    width: 100%;
+    height: 400px;
+    background-color: grey;
+    float: right;
+  }
+
+  i {/*Desing for arrow symbol on contact page*/
+    border: solid #007bff;
+    border-width: 0 3px 3px 0;
+    display: inline-block;
+    padding: 3px;
+  }
+
+  .down { /*Rotates arrow to point down*/
+    transform: rotate(45deg);
+    -webkit-transform: rotate(45deg);
+  }
+
+
+
+ 

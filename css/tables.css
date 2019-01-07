@@ -1,0 +1,73 @@
+/* Styles tables on the loading page*/
+* { 
+    box-sizing: border-box;
+  }
+  
+  table {/* Styles general tables for ski services list and priority list*/
+    font-family: 'Raleway',sans-serif;
+    border-collapse: collapse;
+    width: 100%;
+  }
+  
+  table:hover {/*Adds shadow effect to tables */
+    box-shadow: 0 8px 12px 0 rgba(0,0,0,0.2)
+  }
+  
+
+   td,th { /*Styles table data and table headers*/
+    border: 1px solid #ddd;
+    padding: 8px;
+  }
+
+ th {/*Additional stylling to table header */
+    padding-top: 12px;
+    padding-bottom: 12px;
+    text-align: left;
+    background-color: #007bff;
+    color: white;
+  }
+
+  .columns {/* Styles columns for ski service packet price list*/
+    float: left;
+    width: 33.3%;
+    padding: 8px;
+  }
+  
+  .price {/*Styles packet price list tables*/
+    list-style-type: none;
+    border: 1px solid #eee;
+    margin: 0;
+    padding: 0;
+    -webkit-transition: 0.3s;
+    transition: 0.3s;
+  }
+  
+  .price:hover {/*Adds shadow effect to packet price tables */
+    box-shadow: 0 8px 12px 0 rgba(0,0,0,0.2)
+  }
+  
+  .price .header {/*Styles header in price packet tables*/
+    background-color:#007bff;
+    color: white;
+    font-size: 25px;
+  }
+  
+  .price li { /*Styles items in price packet tables*/
+    border-bottom: 1px solid #eee;
+    padding: 20px;
+    text-align: center;
+  }
+  
+  .price .grey {/*Designs grey fields in price packet tables*/
+    background-color: #eee;
+    font-size: 20px;
+  }
+  
+  @media only screen and (max-width: 600px) {/*Sets column width according to screen size*/
+    .columns {
+      width: 100%;
+    }
+
+
+    }
+  
