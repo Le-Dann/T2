@@ -1,7 +1,7 @@
 <?php
 $servername = "localhost";
 $dbUsername = "root";
-$dbPassword = "322peridot";
+$dbPassword = "";
 $dbName = "m307praxis";
 
 $tableName = "auftrag";
